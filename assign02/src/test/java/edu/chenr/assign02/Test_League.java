@@ -1,5 +1,6 @@
-package edu.realemj.assign02;
+package edu.chenr.assign02;
 // NOTE: CHANGE realemj to YOUR SITNETID!!!
+import edu.chenr.assign02.League;
 import edu.realemj.testing.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;

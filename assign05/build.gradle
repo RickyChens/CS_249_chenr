@@ -20,7 +20,7 @@ test {
 
 application {
     mainClass = "edu.realemj.assign05.Silmarillion"
-    mainModule = "assign05mod"    
+    mainModule = "assign05mod"
 }
 
 task runApp(type: JavaExec, dependsOn: build) {
@@ -30,5 +30,3 @@ task runApp(type: JavaExec, dependsOn: build) {
     group "application"
     standardInput = System.in
 }
-
-

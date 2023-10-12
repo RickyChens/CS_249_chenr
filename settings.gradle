@@ -11,4 +11,4 @@ include ':assign04'
 include ':assign05'
 include ':assign06'
 
-include ':profexercises'
+include ':exercises'

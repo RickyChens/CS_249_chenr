@@ -19,15 +19,14 @@ test {
 }
 
 application {
-    mainClass = "edu.chenr.assign02.League"
-    mainModule = "assign02mod"
+    mainClass = "edu.chenr.assign03.SilentFilm"
+    mainModule = "assign03mod"
 }
 
 task runApp(type: JavaExec, dependsOn: build) {
     classpath = sourceSets.main.runtimeClasspath
     jvmArgs = ['--module-path', classpath.asPath]
-    mainModule = "assign02mod"
+    mainModule = "assign03mod"
     group "application"
     standardInput = System.in
 }
-

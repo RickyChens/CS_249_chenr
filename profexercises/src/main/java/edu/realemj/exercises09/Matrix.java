@@ -59,6 +59,19 @@ public class Matrix {
         return sb.toString();
     }
 
+    public void copyFrom(Matrix other) {
+        if(getRowCnt() != other.getRowCnt() ||
+            getColCnt() != other.getColCnt()) {
+            m = new double[other.getRowCnt()][other.getColCnt()];
+        }
+
+        for(int i = 0; i < getRowCnt(); i++) {
+            for(int j = 0; j < getColCnt(); j++) {
+                m[i][j] = other.m[i][j];
+            }
+        }
+    }
+
     public String toPoint3DString() {
         if(isPoint3D()) {
             return "(" + m[0][0] + "," + m[1][0] + "," + m[2][0] + ")";
@@ -95,6 +108,29 @@ public class Matrix {
         t.set(1, 3, oy);
         t.set(2, 3, oz);
 
+        return t;
+    }
+
+    public static Matrix makeScaling3D(double sx,
+                                       double sy,
+                                       double sz) {
+        Matrix t = new Matrix(4,4);
+        t.set(0,0,sx);
+        t.set(1,1,sy);
+        t.set(2,2,sz);
+        t.set(3,3, 1);
+        return t;
+    }
+
+    public static Matrix makeZRotation3D(double degrees) {
+        double angle = Math.toRadians(degrees);
+        Matrix t = new Matrix(4,4);
+        t.set(0,0,Math.cos(angle));
+        t.set(0,1,-Math.sin(angle));
+        t.set(1,0,Math.sin(angle));
+        t.set(1,1, Math.cos(angle));
+        t.set(2,2,1);
+        t.set(3,3,1);
         return t;
     }
 }

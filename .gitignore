@@ -9,3 +9,6 @@ assign02/src/main/java/edu/realemj/assign02/*.java
 assign03/src/main/java/edu/realemj/assign03/*.java
 assign04/src/main/java/edu/realemj/assign04/*.java
 !assign04/src/main/java/edu/realemj/assign04/Architect.java
+assign05/src/main/java/edu/realemj/assign05/*.java
+!assign05/src/main/java/edu/chenr/assign05/Silmarillion.java
+

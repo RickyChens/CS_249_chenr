@@ -19,8 +19,8 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.assign05.Silmarillion"
-    mainModule = "assign05mod"
+    mainClass = "edu.realemj.assign05.BookOfLostTales"
+    mainModule = "assign05mod"    
 }
 
 task runApp(type: JavaExec, dependsOn: build) {
@@ -30,3 +30,5 @@ task runApp(type: JavaExec, dependsOn: build) {
     group "application"
     standardInput = System.in
 }
+
+

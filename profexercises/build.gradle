@@ -19,7 +19,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises12.SuperShapeLand"
+    mainClass = "edu.realemj.exercises16.BinTree"
     mainModule = "profexercisesmod"
 }
 

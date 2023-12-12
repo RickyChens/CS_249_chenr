@@ -19,7 +19,7 @@ test {
 }
 
 application {
-    mainClass = "edu.chenr.assign05.BookOfLostTales"
+    mainClass = "edu.chenr.assign05.Silmarillion"
     mainModule = "assign05mod"    
 }
 

@@ -24,6 +24,7 @@ public class GameState implements Loadable{
 
     public void load(Scanner input) throws GameFileException {
         baseMap.clear();
+        items.clear();
 
         int numberOfLines = input.nextInt();
 

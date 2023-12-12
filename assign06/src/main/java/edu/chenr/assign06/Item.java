@@ -37,7 +37,7 @@ public class Item implements Loadable{
         } catch (Exception e) {
             ID = "";
             value = 0;
-            throw new GameFileException("Error loading Item", e);
+            throw new GameFileException("Error loading I    tem", e);
         }
     }
 }
